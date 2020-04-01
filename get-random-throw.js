@@ -1,6 +1,4 @@
-export default getRandomThrow;
-
-function getRandomThrow(){
+export function getRandomThrow(){
     const computerThrow = Math.floor(Math.random() * (3 - 1)) + 1;
     if (computerThrow === 1){
         return 'rock';
