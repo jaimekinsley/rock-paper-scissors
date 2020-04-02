@@ -1,29 +1,24 @@
 export function checkResults(player, computer) {
-    if (player === 'rock' && computer === 'rock'){
+    if (player === computer) {
         return 'draw';
     }
-    if (player === 'rock' && computer === 'paper'){
+    else if (player === 'rock' && computer === 'paper'){
         return 'lost';
     }
-    if (player === 'rock' && computer === 'scissors'){
+    else if (player === 'rock' && computer === 'scissors'){
         return 'win';
     }
-    if (player === 'paper' && computer === 'rock'){
+    else if (player === 'paper' && computer === 'rock'){
         return 'win';
     }
-    if (player === 'paper' && computer === 'paper'){
-        return 'draw';
-    }
-    if (player === 'paper' && computer === 'scissors'){
+    
+    else if (player === 'paper' && computer === 'scissors'){
         return 'lost';
     }
-    if (player === 'scissors' && computer === 'rock'){
+    else if (player === 'scissors' && computer === 'rock'){
         return 'lost';
     }
-    if (player === 'scissors' && computer === 'paper'){
+    else if (player === 'scissors' && computer === 'paper'){
         return 'win';
-    }
-    if (player === 'scissors' && computer === 'scissors'){
-        return 'draw';
     }
 }

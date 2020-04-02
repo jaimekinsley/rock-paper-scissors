@@ -14,7 +14,22 @@ input[type=radio]:checked + img {
 
 }
 
-/* To do: ask Danny for help */
 img {
-    height: 200px; 
+    height: 200px; /* To do: ask for help to make this responsive to screen size */
 } 
+
+.you-won {
+    display: none;
+}
+
+.you-lost {
+    display: none;
+}
+
+.you-draw {
+    display: none;
+}
+
+.results {
+    display: none;
+}

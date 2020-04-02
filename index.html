@@ -36,17 +36,9 @@
     </label>
 </div>
 
-<div id = "results-win">
-<h2>You Won!</h2>
-<img src="https://www.athensinsider.com/wp-content/uploads/2018/07/beer-900x600.jpg" alt="cheers">
-</div>
 
-<div id = "results-lost">
-    <h2>You Lost :(</h2>
-    <img src="https://cdn.craftbeer.com/wp-content/uploads/2016/02/21195019/spilled.jpg" alt="spilled beer">
-    </div>
-
-<div>Wins: <span id = "wins"></span><br>
+<div class = "wins-losses-draws">
+Wins: <span id = "wins"></span><br>
 Losses: <span id = "losses"></span><br>
 Draws: <span id = "draws"></span><br>
 </div>
@@ -58,6 +50,24 @@ Draws: <span id = "draws"></span><br>
 <div>
     <button id = "reset-button">Reset</button>
 </div>
+
+<div class = "results" id = "results">
+<h3>The computer chose <span id = "computer-throw"></h3></span></div>
+
+<div class = "you-won" id = "you-won"> 
+    You won!  
+<img src="https://www.athensinsider.com/wp-content/uploads/2018/07/beer-900x600.jpg" alt="cheers">
+</div>
+
+<div class = "you-lost" id = "you-lost">
+    You Lost :(
+    <img src="https://cdn.craftbeer.com/wp-content/uploads/2016/02/21195019/spilled.jpg" alt="spilled beer">
+    </div>
+
+    <div class = "you-draw" id = "you-draw">
+        It's a draw
+        <img src="https://manofmany.com/wp-content/uploads/2019/10/Beer-Sizes-Explained.jpg" alt="beer in glass">
+        </div>
 
     <script type="module" src="app.js"></script>
 </body>
