@@ -1,0 +1,35 @@
+.rock-paper-scissors {
+    display: flex;
+    flex-direction: row;
+    height: 100%; 
+}
+
+input {
+    display: none;
+}
+
+input[type=radio]:checked + img {
+    border: solid 5px red;
+    border-radius: 50%;
+
+}
+
+img {
+    height: 200px; /* To do: ask for help to make this responsive to screen size */
+} 
+
+.you-won {
+    display: none;
+}
+
+.you-lost {
+    display: none;
+}
+
+.you-draw {
+    display: none;
+}
+
+.results {
+    display: none;
+}
