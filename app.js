@@ -64,7 +64,19 @@ playButton.addEventListener ('click', () => {
         // youDrawDiv.style.display = 'block';
     }    
 
-    console.log({wins, losses, draws});
+    console.log({ wins, losses, draws });
 
 });
 
+resetButton.addEventListener ('click', () => {
+    wins = 0;
+    losses = 0;
+    draws = 0;
+
+    winsSpan.textContent = '';
+    lossesSpan.textContent = '';
+    drawsSpan.textContent = '';
+
+    beer.innerHTML = '';
+    resultsDiv.textContent = '';
+});
