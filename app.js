@@ -11,15 +11,14 @@ const lossesSpan = document.getElementById('losses');
 const drawsSpan = document.getElementById('draws');
 const computerChose = document.getElementById('computer-throw');
 const resultsDiv = document.getElementById('results');
-const youWonDiv = document.getElementById('you-won');
-const youLostDiv = document.getElementById('you-lost');
-const youDrawDiv = document.getElementById('you-draw');
+const beer = document.getElementById('beer');
 
 // INITIALIZE
 // set some state data
 let wins = 0;
 let losses = 0;
 let draws = 0;
+
 
 // add some event listeners
 playButton.addEventListener ('click', () => {
@@ -40,21 +39,32 @@ playButton.addEventListener ('click', () => {
     computerChose.textContent = computerThrow;
     resultsDiv.style.display = 'block';
     
-
     if (whoWon === 'win'){
         wins++;
-        youWonDiv.style.display = 'block';
+        winsSpan.textContent = wins;
+        beer.innerHTML = 'You Won! <img src="https://www.athensinsider.com/wp-content/uploads/2018/07/beer-900x600.jpg" alt="cheers">';
+        
+
+        // youWonDiv.style.display = 'block';
     }
     
     else if (whoWon === 'lost'){
         losses++;
-        youLostDiv.style.display = 'block';
+        lossesSpan.textContent = losses;
+        beer.innerHTML = 'You Lose :( <img src="https://cdn.craftbeer.com/wp-content/uploads/2016/02/21195019/spilled.jpg" alt="spilled beer">';
+
+        // youLostDiv.style.display = 'block';
     }    
 
     else if (whoWon === 'draw'){
         draws++;
-        youDrawDiv.style.display = 'block';
+        drawsSpan.textContent = draws;
+        beer.innerHTML = 'It\'s a Draw <img src="https://manofmany.com/wp-content/uploads/2019/10/Beer-Sizes-Explained.jpg" alt="beer in glass">';
+
+        // youDrawDiv.style.display = 'block';
     }    
+
+    console.log({wins, losses, draws});
 
 });
 
