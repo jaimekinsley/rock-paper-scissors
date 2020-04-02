@@ -18,7 +18,7 @@ img {
     height: 200px; /* To do: ask for help to make this responsive to screen size */
 } 
 
-.you-won {
+/* .you-won {
     display: none;
 }
 
@@ -28,7 +28,7 @@ img {
 
 .you-draw {
     display: none;
-}
+} */
 
 .results {
     display: none;

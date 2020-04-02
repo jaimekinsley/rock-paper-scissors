@@ -68,3 +68,15 @@ playButton.addEventListener ('click', () => {
 
 });
 
+resetButton.addEventListener ('click', () => {
+    wins = 0;
+    losses = 0;
+    draws = 0;
+
+    winsSpan.textContent = '';
+    lossesSpan.textContent = '';
+    drawsSpan.textContent = '';
+
+    beer.innerHTML = '';
+    resultsDiv.textContent = '';
+});
