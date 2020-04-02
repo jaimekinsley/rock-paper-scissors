@@ -64,7 +64,7 @@ playButton.addEventListener ('click', () => {
         // youDrawDiv.style.display = 'block';
     }    
 
-    console.log({wins, losses, draws});
+    console.log({ wins, losses, draws });
 
 });
 
